@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<Style>
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: {{ color }};
+    }
+
+</Style>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Welcome!</h1>
+        <div class="row">
+            {% for i in range(0, num) %}
+                <div class="col-3 box m-1 border border-dark border-2">
+                    Column
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
